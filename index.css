@@ -1,12 +1,13 @@
 body {
+    height: 100%;
+    width: 100%;
     background-color: rgb(39, 0, 93);
     align-items: center;
-    margin: auto;
+    margin: 0;
 }
 
 p, h1 {
     color: rgb(174, 210, 255);
-    
 }
 
 h1 {
@@ -15,71 +16,69 @@ h1 {
 }
 
 .title {
-    width: 80%;
     height: 5%;
     align-items: center;
-    margin: auto;
 }
 
 .page {
-    width: 100%;
     height: 95%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
 }
 
-.explorer {
-    width: 65%;
-    height: 75%;
-    margin-top: 12.5%;
-    margin-bottom: 12.5%;
-    margin-left: 10%;
-    margin-right: 10%;
+.explorer { 
+    width: 70vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .sidebar {
-    width: 15%;
-    height: 100%;
+    
+    width: 25vw;
+    float:right;
     display: flex;
-    flex-direction: column;
     border: solid;
     border-color: rgb(148, 0, 255);
-    border-width: 1em;
+    border-width: 1px;
 }
 
 .grid {
     width: 100%;
     height: 100%;
     border: solid;
+    border-width: 1px;
     border-color: rgb(148, 0, 255);
-    border-width: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .t {
-    border-bottom-width: 0.5em;
+    
 }
 
 .m {
-    border-top-width: 1em;
-    border-bottom-width: 0.5em;
+    
 }
 
 .b {
-    border-top-width: 1em;
+    
 }
 
 .br {
-    position: relative;
-    display: flex;
-    justify-content: center;
+    
+}
+
+.br a {
+
 }
 
 .br img {
-    width: 50%;
-    height: 50%;
-    padding-top: 25%;
-    padding-bottom: 25%;
+    height: 10px;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
