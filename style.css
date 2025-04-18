@@ -7,6 +7,7 @@
 body{
     background-image: url("https://web.archive.org/web/20090830230145/http://www.geocities.com/baby22pghpa/fallinghearts9tr.gif");
     background-repeat: repeat;
+    font-family: Consolas, monaco, monospace;
 }
 
 .main{
@@ -31,7 +32,7 @@ body{
 
 .title h1{
     color: rgb(39, 0, 93);
-    font-size: calc(0.5rem + 2vw);
+    font-size: 2em;
 }
 
 .title a{
@@ -41,8 +42,9 @@ body{
 }
 
 .title a img{
-    height: 70px;
+    height: 100%;
     width: auto;
+    object-fit: contain;
 }
 
 .page{
@@ -57,6 +59,9 @@ body{
     border-left: 3px solid rgb(39, 0, 93);
     background: #efcee4;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .table{
@@ -73,8 +78,46 @@ tbody{
 
 th{
     padding: 10px;
+    max-width: 250px;
+    max-height: 100px;
+    overflow-y: auto;
     border: 1px solid #26095a;
     border-collapse: collapse;
     background: #efcee4;
 }
 
+.bulletin{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-collapse: collapse;
+    border-top: 1px solid #26095a;
+    border-bottom: 2px solid #26095a;
+    background: rgb(200, 176, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: calc(1rem);
+}
+
+.bulletin img{
+    height: 50px;
+    width: 100%;
+}
+
+.endeavors{
+    margin-top: 10px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.sidebarh1{
+    font-size: calc(0.3rem + 1vw);
+    padding-left: 10px;
+    padding-right: 10px;
+}
