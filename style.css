@@ -9,6 +9,9 @@ body{
     background-repeat: repeat;
     font-family: Consolas, monaco, monospace;
 }
+body.dark {
+    background-image: url('https://web.archive.org/web/20060210061512/http://www.geocities.com/Tokyo/Courtyard/6939/shinninguniverse.gif');
+}
 
 .main{
     display: flex;
@@ -29,10 +32,17 @@ body{
     justify-content: left;
     border-bottom: 3px solid rgb(39, 0, 93);
 }
+body.dark .title{
+    background-color: black;
+    border-color: white;
+}
 
 .title h1{
     color: rgb(39, 0, 93);
     font-size: 2em;
+}
+body.dark h1{
+    color: white;
 }
 
 .title a{
@@ -46,6 +56,9 @@ body{
     width: auto;
     object-fit: contain;
 }
+body.dark .title a img{
+    height: 30px;
+}
 
 .page{
     display: flex;
@@ -57,11 +70,37 @@ body{
     width: 20%;
     max-height: 91vh;
     border-left: 3px solid rgb(39, 0, 93);
-    background: #efcee4;
+    background-color: #efcee4;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 0;
+}
+body.dark .sidebar{
+    background-color: black;
+    border-color: white;
+}
+
+#sidebar_button{
+    display: flex;
+    position: fixed;
+    top: calc(9vh + 10px); 
+    right: calc(20% + 10px); 
+    z-index: 11;
+    font-size: 1em;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #26095a;
+    padding: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+body.dark #sidebar_button{
+    background-color: #fff;
+    border-color: black;
 }
 
 .table{
@@ -85,6 +124,21 @@ th{
     border-collapse: collapse;
     background: #efcee4;
 }
+body.dark th{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+#darkmode {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    width: 200px; 
+    height: 25px; 
+    font-family: Consolas, monaco, monospace;
+    cursor: pointer;
+}
 
 .bulletin{
     width: 100%;
@@ -100,6 +154,11 @@ th{
     flex-direction: column;
     align-items: left;
     font-size: calc(1rem);
+}
+body.dark .bulletin{
+    background: black;
+    border-color: white;
+    color: white;
 }
 
 .bulletin img{
