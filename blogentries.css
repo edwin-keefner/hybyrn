@@ -1,0 +1,26 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #26095a;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: black;
+    background: #ffbce9;
+    width: 50vw;
+    height: auto;
+}
+body.dark .content {
+    border-color: white;
+    color: white;
+    background: none;
+    background-color: transparent;
+}
+
+.content * {
+    margin-top: 10px;
+}
+
+.content p {
+    padding-left: 1.05em;
+    padding-right: 1.05em;
+}

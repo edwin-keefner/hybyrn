@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://web.archive.org/web/20090830230145/http://www.geocities.com/baby22pghpa/fallinghearts9tr.gif");
+    background-repeat: repeat;
+    font-family: Consolas, monaco, monospace;
+}
+body.dark {
+    background-image: url('https://web.archive.org/web/20060210061512/http://www.geocities.com/Tokyo/Courtyard/6939/shinninguniverse.gif');
+}
+
+button:hover{
+    text-shadow: 0 0 8px #f712ec;
+}
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+body.dark a:link{
+    color: white;
+}
+body.dark a:visited{
+    color: white;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    top: 0px;
+    left: 0px;
+    height: 9vh;
+    width: 100vw;
+    padding-left: 1%;
+    background-color: rgb(200, 176, 233);
+    align-items: center;
+    justify-content: left;
+    border-bottom: 3px solid rgb(39, 0, 93);
+}
+body.dark .title{
+    background-color: black;
+    border-color: white;
+}
+
+.title h1{
+    color: rgb(39, 0, 93);
+    font-size: 2em;
+}
+body.dark h1{
+    color: white;
+}
+
+.title a{
+    display: flex;
+    align-items: center;
+    margin-right: 1%;
+}
+
+.title a img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+body.dark .title a img{
+    height: 30px;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+#darkmode {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    width: 100px; 
+    height: 25px; 
+    font-family: Consolas, monaco, monospace;
+    font-size: x-small;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 1%;
+}

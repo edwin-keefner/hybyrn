@@ -1,24 +1,6 @@
-const clock = document.getElementById('time');
 const dark_mode_button = document.getElementById('darkmode');
-const sidebar = document.querySelector('.sidebar');
-const table = document.querySelector('.table');
-const sidebar_button = document.getElementById('sidebar_button');
 let dark_toggle = localStorage.getItem('darkMode') === 'true';
-dark_toggle ? dark_mode() : light_mode(); //initializes user value 
-
-let sidebar_toggle = true;
-sidebar_button.addEventListener('click', () => {
-    if(sidebar_toggle) {
-        sidebar.style.width = '0';
-        table.style.width = '100%';
-        sidebar_button.style.right = '10px';
-    } else {
-        sidebar.style.width = '20%';
-        table.style.width = '80%';
-        sidebar_button.style.right = 'calc(20% + 10px)';
-    }
-    sidebar_toggle = !sidebar_toggle;
-});
+dark_toggle ? dark_mode() : light_mode(); //initializes user value after getting value from storage
 
 dark_mode_button.addEventListener('click', () => {
     dark_toggle = !dark_toggle; 
