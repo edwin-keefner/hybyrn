@@ -1,8 +1,9 @@
 const entry_list = document.getElementById("musicblogentries");
+const show_info = document.querySelectorAll(".showmore");
 
 const blogentries = [
     //"/musicblogentries/YYYY-MM-DD.html"
-    "/musicblogentries/2025-05-02-jojomayer.html"
+    "/musicblogentries/2025-05-02-jojomayer.html",
 ]
 
 const blognames = [
@@ -17,3 +18,12 @@ for (let i = 0; i < blogentries.length; i++) {
     entry.innerHTML = blognames[i];
     entry_list.appendChild(entry);
 }
+
+show_info.forEach((button) => {
+    button.addEventListener("click", () => {
+        const info = button.parentNode.querySelector(".artistinfo");
+        if (info) {
+            info.style.display = (info.style.display === "block") ? "none" : "block";
+        }
+    });
+}); 

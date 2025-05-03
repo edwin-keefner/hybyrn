@@ -13,6 +13,18 @@ body.dark {
     background-image: url('https://web.archive.org/web/20060210061512/http://www.geocities.com/Tokyo/Courtyard/6939/shinninguniverse.gif');
 }
 
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid #26095a;
+    cursor: pointer;
+}
+body.dark button {
+    background: none;
+    background-color: transparent;
+    color:white;
+    border-color: white;
+}
 button:hover{
     text-shadow: 0 0 8px #f712ec;
 }
@@ -56,7 +68,9 @@ body.dark .title{
 
 .title h1{
     color: rgb(39, 0, 93);
-    font-size: 2em;
+    font-size: calc(1rem + 1vw);
+    margin-left: 5px;
+    
 }
 body.dark h1{
     color: white;
@@ -84,9 +98,6 @@ body.dark .title a img{
 }
 
 #darkmode {
-    background-color: white;
-    border: 1px solid black;
-    color: black;
     width: 100px; 
     height: 25px; 
     font-family: Consolas, monaco, monospace;

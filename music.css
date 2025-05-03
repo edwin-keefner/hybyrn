@@ -33,6 +33,7 @@ body.dark .personal_music {
 }
 
 .personal_section {
+    width: 95%;
     min-width: 0;
     min-height: 0;
     display: flex;
@@ -50,6 +51,7 @@ body.dark .personal_music {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 #song {
@@ -63,6 +65,27 @@ body.dark .personal_music {
     align-items: center;
 }
 
+.showmore {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.artistinfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #26095a;
+    margin: 10px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+    display: none;
+}
+body.dark .artistinfo {
+    border-color: white;
+    color: white;
+}
+
 #musicblogentries {
     display: flex;
     flex-direction: column;
@@ -73,8 +96,9 @@ body.dark .personal_music {
     background: linear-gradient(#ffb3e6, rgb(200, 176, 233), #ffb3e6);
     width: 50vw;
     max-width: 1250px;
-    height: 83vh;
+    max-height: 83vh;
     overflow-y: scroll;
+    padding: 5px;
 }
 body.dark #musicblogentries {
     border-color: white;

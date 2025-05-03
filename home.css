@@ -23,16 +23,10 @@ body.dark .sidebar{
     font-size: small;
     width: 35px;
     height: 35px;
-    background-color: #fff;
-    border: 2px solid #26095a;
     padding: auto;
     cursor: pointer;
     align-items: center;
     justify-content: center;
-}
-body.dark #sidebar_button{
-    background-color: #fff;
-    border-color: black;
 }
 
 .grid_container {
@@ -70,36 +64,6 @@ body.dark .cell{
     color: white;
     border-color: white;
 }
-
-
-/*.table{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* tbody{
-    border-spacing: 0;
-} */
-
-/* th{
-    padding: 10px;
-    max-width: 250px;
-    max-height: 1000px;
-    overflow-y: auto;
-    overflow-x: scroll;
-    border: 1px solid #26095a;
-    border-collapse: collapse;
-    background: #ffbce9;
-    word-wrap: break-word;
-} 
-body.dark th{
-    background-color: transparent;
-    color: white;
-    border-color: white;
-} */
 
 .bulletin{
     width: 100%;
