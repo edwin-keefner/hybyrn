@@ -13,6 +13,8 @@ body.dark {
     background-image: url('https://web.archive.org/web/20060210061512/http://www.geocities.com/Tokyo/Courtyard/6939/shinninguniverse.gif');
 }
 
+
+
 button:hover{
     text-shadow: 0 0 8px #f712ec;
 }

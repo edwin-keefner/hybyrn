@@ -5,6 +5,7 @@ const sidebar_button = document.getElementById('sidebar_button');
 
 //entries from newest to oldest
 const socentries = [ 
+    "5/2/2025 11:05pm: jojo mayer is a beautiful man with beautiful words",
     "5/1/25 2:21am: it's broke thursday",
     "5/1/25 1:49am: i like how the website is coming along this is so cool",
     "4/30/25 1:51am: bedtime",
