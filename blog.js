@@ -1,7 +1,7 @@
 const entry_list = document.getElementById("entries");
 
 const blogentries = [
-    "/blogentries/YYYY-MM-DD.html"
+    "/blogentries/MM-DD-YYYY.html"
 ]
 
 const blognames = [

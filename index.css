@@ -30,16 +30,16 @@ button:hover{
 }
 
 a:link{
-    color: black;
+    color: purple;
 }
 a:visited{
-    color: black;
+    color: purple;
 }
 body.dark a:link{
-    color: white;
+    color: pink;
 }
 body.dark a:visited{
-    color: white;
+    color: pink;
 }
 
 .main{
@@ -54,6 +54,7 @@ body.dark a:visited{
     top: 0px;
     left: 0px;
     height: 9vh;
+    min-height: 66px;
     width: 100vw;
     padding-left: 1%;
     background-color: rgb(200, 176, 233);

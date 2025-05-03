@@ -2,8 +2,8 @@ const entry_list = document.getElementById("musicblogentries");
 const show_info = document.querySelectorAll(".showmore");
 
 const blogentries = [
-    //"/musicblogentries/YYYY-MM-DD.html"
-    "/musicblogentries/2025-05-02-jojomayer.html",
+    //"/musicblogentries/MM-DD-YYYY.html"
+    "/musicblogentries/05-03-2025-jojomayer.html",
 ]
 
 const blognames = [
