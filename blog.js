@@ -1,12 +1,20 @@
 const entry_list = document.getElementById("entries");
 
 const blogentries = [
-    "/blogentries/MM-DD-YYYY.html"
+    //"/blogentries/MM-DD-YYYY.html"
 ]
 
 const blognames = [
-    "test blog"
+    //"test blog"
 ]
+
+if (blogentries.length === 0) {
+    const entry = document.createElement("p");
+    entry.innerHTML = "nothing here...";
+    entry.style.fontSize = "2rem";
+    entry.style.opacity = "0.5";
+    entry_list.appendChild(entry);
+}
 
 for (let i = 0; i < blogentries.length; i++) {
     const entry = document.createElement("a");

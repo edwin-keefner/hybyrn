@@ -3,13 +3,21 @@ const show_info = document.querySelectorAll(".showmore");
 
 const blogentries = [
     //"/musicblogentries/MM-DD-YYYY.html"
-    "/musicblogentries/05-03-2025-jojomayer.html",
+    "/musicblogentries/05-03-2025-jojomayer.html"
 ]
 
 const blognames = [
     //"music test blog"
     "5/2/2025: Jojo Mayer"
 ]
+
+if (blogentries.length === 0) {
+    const entry = document.createElement("p");
+    entry.innerHTML = "nothing here...";
+    entry.style.fontSize = "2rem";
+    entry.style.opacity = "0.5";
+    entry_list.appendChild(entry);
+}
 
 for (let i = 0; i < blogentries.length; i++) {
     const entry = document.createElement("a");
