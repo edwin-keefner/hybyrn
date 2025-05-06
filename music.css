@@ -3,6 +3,13 @@
     align-items: center;
 }
 
+p {
+    color: black;
+}
+body.dark p {
+    color: white;
+}
+
 hr {
     width: 95vw;
     margin-top: 25px;
