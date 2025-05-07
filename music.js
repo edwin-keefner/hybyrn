@@ -3,7 +3,7 @@ const show_info = document.querySelectorAll(".showmore");
 
 const blogentries = [
     //"/musicblogentries/MM-DD-YYYY.html"
-    "/musicblogentries/05-03-2025-jojomayer.html"
+    "musicblogentries/05-03-2025-jojomayer.html"
 ]
 
 const blognames = [
