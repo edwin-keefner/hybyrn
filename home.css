@@ -105,3 +105,8 @@ body.dark .bulletin{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+#worldgeneration {
+    width: 200px;
+    height: 200px;
+}
