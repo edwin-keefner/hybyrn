@@ -1,0 +1,132 @@
+.page {
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    color: black;
+}
+body.dark p {
+    color: white;
+}
+
+hr {
+    width: 95vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+body.dark hr {
+    color: white;
+}
+
+.personal_music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 80vw;
+    max-width: 2000px;
+    min-width: 0;
+    min-height: 0;
+    margin-top: 25px;
+    background: linear-gradient(#ffb3e6, rgb(200, 176, 233), #ffb3e6);
+    border: 1px solid #26095a;
+}
+body.dark .personal_music {
+    border-color: white;
+    color: white;
+    background: none;
+    background-color: transparent;
+}
+
+.personal_section {
+    width: 95%;
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#songs_container {
+    min-width: 0;
+    min-height: 0;
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#song {
+    min-width: 0;
+    min-height: 0;
+    width: 50%;
+    max-width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showmore {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.artistinfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #26095a;
+    margin: 10px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+    display: none;
+}
+body.dark .artistinfo {
+    border-color: white;
+    color: white;
+}
+
+#musicblogentries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #26095a;
+    margin-bottom: 2vh;
+    color: black;
+    background: linear-gradient(#ffb3e6, rgb(200, 176, 233), #ffb3e6);
+    width: 50vw;
+    max-width: 1250px;
+    max-height: 83vh;
+    overflow-y: scroll;
+    padding: 5px;
+}
+body.dark #musicblogentries {
+    border-color: white;
+    color: white;
+    background: none;
+    background-color: transparent;
+}
+
+.entry {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border: 1px solid #26095a;
+    color: black;
+    width: calc(100% - 40px);
+}
+body.dark .entry {
+    color: white;
+    border-color: white;
+}
