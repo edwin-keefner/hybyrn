@@ -1,9 +1,13 @@
 {
-  "name": "hybyrn's website",
+  "name": "hybyrns-website",
   "version": "1.0.0",
   "description": "yup",
   "main": "index.html",
+  "type": "module",
 
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
