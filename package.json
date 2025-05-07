@@ -4,16 +4,15 @@
   "description": "yup",
   "main": "index.html",
   "type": "module",
-
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
     "dev": "vite",
     "build": "npx vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "chmod +x node_modules/.bin/*"
   },
-
   "dependencies": {
     "three": "^0.176.0"
   },
