@@ -65,6 +65,10 @@ body.dark .cell{
     border-color: white;
 }
 
+#canvas {
+    
+}
+
 .bulletin{
     width: 100%;
     padding-top: 10px;
@@ -107,6 +111,12 @@ body.dark .bulletin{
 }
 
 #worldgeneration {
-    width: 200px;
-    height: 200px;
+    border: 3px solid #26095a;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body.dark #worldgeneration {
+    border-color: white;
 }
