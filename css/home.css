@@ -43,6 +43,8 @@ body.dark hr{
     height: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-top: auto;
 }
 
 .grid {
@@ -122,5 +124,17 @@ body.dark .bulletin{
 }
 body.dark #worldgeneration {
     cursor: grab;
+    border-color: white;
+}
+
+footer {
+    width: 80%; 
+    height: 10vh; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    border-top: 3px solid #26095a;
+}
+body.dark footer {
     border-color: white;
 }

@@ -1,6 +1,7 @@
 const sidebar = document.querySelector('.sidebar');
 const grid_container = document.querySelector('.grid_container');
 const sidebar_button = document.getElementById('sidebar_button');
+const footer = document.querySelector('footer');
 
 //entries from newest to oldest
 const socentries = [ 
@@ -37,10 +38,12 @@ sidebar_button.addEventListener('click', () => {
     if(sidebar_toggle) {
         sidebar.style.width = '0';
         grid_container.style.width = '100%';
+        footer.style.width = '100%';
         sidebar_button.style.right = '10px';
     } else {
         sidebar.style.width = '20%';
         grid_container.style.width = '80%';
+        footer.style.width = '80%';
         sidebar_button.style.right = 'calc(20% + 10px)';
     }
     sidebar_toggle = !sidebar_toggle;
