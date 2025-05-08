@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"> 
         <link href="/css/index.css" rel="stylesheet" type="text/css"> 
         <link href="/css/home.css" rel="stylesheet" type="text/css"> 
-        <<script type="importmap">
+        <script type="importmap">
             {
               "imports": {
                 "three": "https://cdn.jsdelivr.net/npm/three@v0.176.0/build/three.module.js",
@@ -50,6 +50,9 @@
                     </div>
 
                     <div class="cell">
+                        <h4>Time:</h4>
+                        <p id="userTime">hi</p>
+                        <hr>
                         <h4>Current time for me:</h4>
                         <p id='time'>hi</p>
                     </div>
@@ -97,6 +100,7 @@
         </div>
         <script src="/js/index.js" defer></script>
         <script src="/js/home.js" defer></script>
-        <script src="/js/worldgeneration.js" defer></script>
+        <script src="/js/clock.js" defer></script>
+        <script src="/js/worldgeneration.js" type="module" defer></script>
     </body>
 </html>

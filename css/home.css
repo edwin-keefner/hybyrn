@@ -14,6 +14,15 @@ body.dark .sidebar{
     border-color: white;
 }
 
+hr {
+    color: #26095a;
+    width: 95%;
+    margin: 10px;
+}
+body.dark hr{
+    color: white;
+}
+
 #sidebar_button{
     display: flex;
     position: fixed;
@@ -23,7 +32,6 @@ body.dark .sidebar{
     font-size: small;
     width: 35px;
     height: 35px;
-    padding: auto;
     cursor: pointer;
     align-items: center;
     justify-content: center;
@@ -48,7 +56,7 @@ body.dark .sidebar{
 .cell {
     min-width: 0;
     min-height: 0;
-    overflow: auto;
+    overflow: hidden;
     padding: 1rem;
     border: 1px solid #26095a;
     border-collapse: collapse;
@@ -65,10 +73,6 @@ body.dark .cell{
     border-color: white;
 }
 
-#canvas {
-    
-}
-
 .bulletin{
     width: 100%;
     padding-top: 10px;
@@ -81,7 +85,6 @@ body.dark .cell{
     background: rgb(200, 176, 233);
     display: flex;
     flex-direction: column;
-    align-items: left;
     font-size: calc(1rem);
 }
 body.dark .bulletin{
@@ -118,5 +121,6 @@ body.dark .bulletin{
     height: 100%;
 }
 body.dark #worldgeneration {
+    cursor: grab;
     border-color: white;
 }

@@ -1,10 +1,10 @@
-const clock = document.getElementById('time');
 const sidebar = document.querySelector('.sidebar');
 const grid_container = document.querySelector('.grid_container');
 const sidebar_button = document.getElementById('sidebar_button');
 
 //entries from newest to oldest
 const socentries = [ 
+    "5/7/2025 8:38pm: something about node.js made me feel like i was doing something very wrong so i saved my wellbeing and removed it",
     "5/6/2025 2:04am: i really have no idea how anything to do with nodejs works now it feels like i have a bunch of bloat, but i hope i actually learn how to use it",
     "5/6/2025 2:24am: so ready to bomb another test tomorrow",
     "5/2/2025 11:05pm: jojo mayer is a beautiful man with beautiful words",
@@ -45,4 +45,5 @@ sidebar_button.addEventListener('click', () => {
     }
     sidebar_toggle = !sidebar_toggle;
 });
+
 
