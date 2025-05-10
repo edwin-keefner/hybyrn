@@ -1,10 +1,14 @@
 const sidebar = document.querySelector('.sidebar');
 const grid_container = document.querySelector('.grid_container');
 const sidebar_button = document.getElementById('sidebar_button');
-const footer = document.querySelector('footer');
+//const footer = document.querySelector('footer');
+const bar1 = document.getElementById('gif1');
+const bar2 = document.getElementById('gif2');
 
 //entries from newest to oldest
-const socentries = [ 
+const socentries = [
+    "5/10/25 4:45am: i need more gifs of pixel characters sitting they're so chill",
+    "5/10/2025 1:10am: the peak of the curve",
     "5/7/2025 8:38pm: something about node.js made me feel like i was doing something very wrong so i saved my wellbeing and removed it",
     "5/6/2025 2:04am: i really have no idea how anything to do with nodejs works now it feels like i have a bunch of bloat, but i hope i actually learn how to use it",
     "5/6/2025 2:24am: so ready to bomb another test tomorrow",
@@ -40,11 +44,15 @@ sidebar_button.addEventListener('click', () => {
         grid_container.style.width = '100%';
         //footer.style.width = '100%';
         sidebar_button.style.right = '10px';
+        bar1.style.width = '100vw';
+        bar2.style.width = '100vw';
     } else {
         sidebar.style.width = '20%';
         grid_container.style.width = '80%';
         //footer.style.width = '80%';
         sidebar_button.style.right = 'calc(20% + 10px)';
+        bar1.style.width = '80vw';
+        bar2.style.width = '80vw';
     }
     sidebar_toggle = !sidebar_toggle;
 });

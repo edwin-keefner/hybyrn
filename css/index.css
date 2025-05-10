@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("https://web.archive.org/web/20090830230145/http://www.geocities.com/baby22pghpa/fallinghearts9tr.gif");
+    background-image: url("https://web.archive.org/web/20091020104116/http://hk.geocities.com/ironterry_crystal/background/move_heart.gif");
     background-repeat: repeat;
     font-family: Consolas, monaco, monospace;
 }
@@ -30,12 +30,16 @@ button:hover{
 }
 
 p, h1, h2, h3, h4, li{
+    font-size: 0.85rem;
     color: #26095a;
 }
 body.dark p, body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark li{
     color: white; 
 }
 
+a {
+    font-size: 0.85rem;
+}
 a:link{
     color: purple;
 }

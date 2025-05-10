@@ -59,6 +59,7 @@ canvas.addEventListener( 'mouseup', () => {
     canvas.style.cursor = 'grab';
 });
 
+//dark mode support
 dark_mode_button.addEventListener('click', () => {
     if (localStorage.getItem('darkMode') === 'true') {
         mesh.material.color = new THREE.Color( '#26095a' );
