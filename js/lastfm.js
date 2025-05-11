@@ -2,14 +2,13 @@ async function updateSongs() {
     try {
       const response = await fetch("/api/lastfm?user=hybyrn&limit=10");
       const data = await response.json();
-      console.log(data.recenttracks.track);
-      console.log(data.recenttracks.track[0].name);
+      displayTracks(data.recenttracks.track);
     } catch (error) {
       console.error("Failed to fetch tracks:", error);
     }
   }
 
-  /*function displayTracks(tracks) {
+  function displayTracks(tracks) {
     const container = document.getElementById("tracks");
     container.innerHTML = tracks.map(track => `
       <div class="track">
@@ -20,7 +19,7 @@ async function updateSongs() {
         </div>
       </div>
     `).join(""); 
-  } */
+  } 
 
   updateSongs();
   setInterval(updateSongs, 10000); 
