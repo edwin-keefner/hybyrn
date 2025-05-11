@@ -23,4 +23,4 @@ async function updateSongs() {
   } */
 
   updateSongs();
-  setInterval(updateSongs(), 1000); 
+  setInterval(updateSongs, 1000); 
