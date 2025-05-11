@@ -2,10 +2,12 @@ const entry_list = document.getElementById("entries");
 
 const blogentries = [
     //"/blogentries/MM-DD-YYYY.html"
+    "/blogentries/05-10-2025-whywebsite.html"
 ]
 
 const blognames = [
     //"test blog"
+    "5/10/2025: Why make a website?"
 ]
 
 if (blogentries.length === 0) {
