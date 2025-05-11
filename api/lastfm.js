@@ -4,7 +4,7 @@ export default async function handler(req, res) {
 
   try {
     const { user = "hybyrn", limit = 10 } = req.query;
-    const url = `http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${user}&api_key=${process.env.LASTFM_API_KEY}&format=json&limit=${limit}`;
+    const url = `http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${user}&api_key=${process.env.LAST_FM_API_KEY}&format=json&limit=${limit}`;
     
     const response = await fetch(url);
     const data = await response.json();
