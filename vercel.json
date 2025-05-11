@@ -1,5 +1,0 @@
-{
-  "routes": [
-    { "src": "/lastfmapi", "dest": "/api/lastfmapi.js"}
-  ]
-}

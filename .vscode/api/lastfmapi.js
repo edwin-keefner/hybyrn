@@ -1,8 +1,9 @@
-module.exports = async (req, res) => {
-  const username = "hybyrn";
+export default async function handler(req, res) {
+  const { user = "hybyrn", limit = 10 } = req.query;
   const response = await fetch(
-    `https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${username}&api_key=${process.env.LAST_FM_API_KEY}&format=json&limit=1`
+    `http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${user}&api_key=${process.env.LASTFM_API_KEY}&format=json&limit=${limit}`
   );
+
   const data = await response.json();
-  res.json(data);
-};
+  res.status(200).json(data);
+}

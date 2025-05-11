@@ -1,12 +1,26 @@
-function updateCurrentSong() {
-    fetch("/lastfmapi")
-    .then(response => response.json())
-    .then(data => {
-        const track = data.recenttracks.track[0];
-    
-        console.log(track); 
-    });
-}
+async function updateSongs() {
+    try {
+      const response = await fetch("/api/lastfm?user=hybyrn&limit=10");
+      const data = await response.json();
+      console.log(data.recenttracks.track);
+      //displayTracks(data.recenttracks.track);
+    } catch (error) {
+      console.error("Failed to fetch tracks:", error);
+    }
+  }
 
-updateCurrentSong();
-setInterval(updateCurrentSong, 1000);
+  /*function displayTracks(tracks) {
+    const container = document.getElementById("tracks");
+    container.innerHTML = tracks.map(track => `
+      <div class="track">
+        <img src="${track.image[2]["#text"]}" alt="${track.name}" />
+        <div class="track-info">
+          <div class="track-name">${track.name}</div>
+          <div class="artist">${track.artist["#text"]}</div>
+        </div>
+      </div>
+    `).join(""); 
+  } */
+
+  updateSongs();
+  setInterval(updateSongs(), 1000); 
