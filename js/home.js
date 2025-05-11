@@ -58,5 +58,3 @@ sidebar_button.addEventListener('click', () => {
     }
     sidebar_toggle = !sidebar_toggle;
 });
-
-
