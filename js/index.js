@@ -19,10 +19,3 @@ function light_mode() {
     dark_mode_button.textContent = "Light Mode?";
     document.getElementById('home_image').src = "https://web.archive.org/web/20090829083431/http://geocities.com/the_sonic_universe/skull.gif";
 }
-
-
-    
-
-
-
-
