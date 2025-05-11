@@ -165,3 +165,16 @@ body.dark .fancygif {
 #gif2 {
     bottom: 0;
 }
+
+.blinkies {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.blinkies img {
+    width: 150px; 
+    height: auto;
+}

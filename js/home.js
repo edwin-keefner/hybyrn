@@ -7,6 +7,7 @@ const bar2 = document.getElementById('gif2');
 
 //entries from newest to oldest
 const socentries = [
+    "5/10/25 11:38pm: a miniature version of rei ayanami is literally sitting on the border of my title this is literally the coolest thing ever",
     "5/10/25 4:45am: i need more gifs of pixel characters sitting they're so chill",
     "5/10/2025 1:10am: the peak of the curve",
     "5/7/2025 8:38pm: something about node.js made me feel like i was doing something very wrong so i saved my wellbeing and removed it",
