@@ -10,13 +10,18 @@ async function updateSongs() {
 
   function displayTracks(tracks) {
     const container = document.getElementById("tracks");
+    if (tracks["@attr"].nowplaying === "true") {
+        var playing = "Now Playing!";
+    } else {
+        var playing = "Played: " + tracks.date["#text"]; 
+    }
     container.innerHTML = tracks.map(track => `
       <div class="track">
-        <img src="${track.image[2]["#text"]}" alt="${track.name}" />
-        <div class="track-info">
-          <div class="track-name">${track.name}</div>
-          <div class="artist">${track.artist["#text"]}</div>
-        </div>
+        <img src="${track.image[3]["#text"]}" alt="${track.name}" />
+        <a href="${track.url}"><p>Title: ${track.name}</p></a>
+        <p>Artist: ${track.artist["#text"]}</p>
+        <p>Album: ${track.album["#text"]}</p>
+        <p>${playing}</p>
       </div>
     `).join(""); 
   } 

@@ -178,3 +178,17 @@ body.dark .fancygif {
     width: 150px; 
     height: auto;
 }
+
+#tracks {
+    max-height: 100px;
+    overflow-y: scroll; 
+}
+
+.track {
+    display: flex; 
+    flex-direction: column;
+}
+.track img {
+    width: 50px;
+    height: auto;
+}
