@@ -180,7 +180,7 @@ body.dark .fancygif {
 }
 
 #tracks {
-    max-height: 100px;
+    max-height: 125px;
     overflow-y: scroll; 
 }
 

@@ -16,11 +16,12 @@ async function updateSongs() {
         const playing = isNowPlaying ? "Now Playing!" : `Played: ${track.date?.["#text"] || "unknown time"}`;
     return `
     <div class="track">
-        <img src="${track.image[3]["#text"]}" alt="${track.name}" />
-        <a href="${track.url}"><p>Title: ${track.name}</p></a>
+        <center><img src="${track.image[3]["#text"]}" alt="${track.name}"</center>
+        <p>Title: <a href="${track.url}" target="_blank">${track.name}</a></p>
         <p>Artist: ${track.artist["#text"]}</p>
         <p>Album: ${track.album["#text"]}</p>
         <p>${playing}</p>
+        <hr>
     </div>
     `;}).join(""); 
   } 
