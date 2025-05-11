@@ -1,6 +1,3 @@
-res.setHeader("Access-Control-Allow-Origin", "*"); 
-res.setHeader("Content-Type", "application/json");
-
 async function updateSongs() {
     try {
       const response = await fetch("/api/lastfm?user=hybyrn&limit=10");

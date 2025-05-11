@@ -1,3 +1,6 @@
+res.setHeader("Access-Control-Allow-Origin", "*"); 
+res.setHeader("Content-Type", "application/json");
+
 export default async function handler(req, res) {
   const { user = "hybyrn", limit = 10 } = req.query;
   const lastfmUrl = `http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=${user}&api_key=${process.env.LASTFM_API_KEY}&format=json&limit=${limit}`;
