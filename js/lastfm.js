@@ -3,7 +3,7 @@ async function updateSongs() {
       const response = await fetch("/api/lastfm?user=hybyrn&limit=10");
       const data = await response.json();
       console.log(data.recenttracks.track);
-      console.log(track.name);
+      console.log(data.recenttracks.track[0].name);
     } catch (error) {
       console.error("Failed to fetch tracks:", error);
     }
