@@ -12,22 +12,27 @@ async function updateSongs() {
     const container = document.getElementById("tracks");
 
     container.innerHTML = tracks.map(track => {
+
     const isNowPlaying = track["@attr"]?.nowplaying === "true";
+    
+    const currentTime = new Date();
     const songTime = new Date(track.date?.["#text"]);
-    const currentTime = new Date(new Date().toLocaleTimeString('en-US', {timeZone: 'utc'}));
-    const millisecondsAgo = (currentTime - songTime); 
-    const daysAgo = Math.floor(millisecondsAgo / 86400000);
-    const hoursAgo = Math.floor((millisecondsAgo % 86400000) / 3600000);
-    const minutesAgo = Math.round(((millisecondsAgo % 86400000) % 3600000) / 60000);
-    var parsedAgo = null; 
-    if (daysAgo) {
+    const currentUTC = Date.UTC(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate());
+    const songUTC = Date.UTC(songTime.getFullYear(), songTime.getMonth(), songTime.getDate());
+    
+    var daysAgo = Math.floor((currentUTC - songUTC) / 86400000);
+    var hoursAgo = Math.floor((currentUTC - songUTC) / 3600000);
+    var minutesAgo = Math.floor((currentUTC - songUTC) / 60000); 
+    var parsedAgo = null;
+
+    if (daysAgo != 0) {
         parsedAgo = daysAgo + " Days Ago";
-    } else if (hoursAgo) {
-        parsedAgo = hoursAgo + " Hours and " + (currentTime.getMinutes() - songTime.getMinutes()) + " Minutes Ago";
+    } else if (hoursAgo != 0) {
+        parsedAgo = hoursAgo + " Hours Ago"; 
     } else {
-        parsedAgo = minutesAgo + " Minutes Ago";
+        parsedAgo = minutesAgo + " Minutes Ago"; 
     }
-    console.log(hoursAgo); 
+
     const playing = isNowPlaying ? "~Now Playing!~" : `Played ${parsedAgo || "unknown time"}`;
     return `
     <div class="track">
@@ -38,7 +43,8 @@ async function updateSongs() {
         <p>${playing}</p>
         <hr>
     </div>
-    `;}).join(""); 
+    `;
+    }).join(""); 
   } 
 
   updateSongs();
