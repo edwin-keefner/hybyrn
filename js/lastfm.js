@@ -15,28 +15,28 @@ async function updateSongs() {
 
     const isNowPlaying = track["@attr"]?.nowplaying === "true";
     
+    const songTime = new Date (track.date?.["#text"]);
     const currentTime = new Date();
-    const songTime = new Date(track.date?.["#text"]);
-    const currentUTC = Date.UTC(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate());
-    const songUTC = Date.UTC(songTime.getFullYear(), songTime.getMonth(), songTime.getDate());
-    
-    console.log(currentUTC);
-    console.log(songUTC);
-    console.log(currentUTC - songUTC);
-    var daysAgo = Math.floor((currentUTC - songUTC) / 86400000);
-    var hoursAgo = Math.floor((currentUTC - songUTC) / 3600000);
-    var minutesAgo = Math.floor((currentUTC - songUTC) / 60000); 
-    var parsedAgo = null;
 
-    if (daysAgo != 0) {
-        parsedAgo = daysAgo + " Days Ago";
-    } else if (hoursAgo != 0) {
-        parsedAgo = hoursAgo + " Hours Ago"; 
+    const msDiff = currentTime - songTime;
+    const secondsDiff = Math.floor(msDiff / 1000);
+    const minutesDiff = Math.floor(secondsDiff / 60);
+    const hoursDiff = Math.floor(minutesDiff / 60); 
+    const daysDiff = Math.floor(hoursDiff / 24); 
+
+    let parsedDiff;
+    if (daysDiff > 0) {
+        parsedDiff = `${daysDiff} Day${daysDiff > 1 ? 's' : ''} Ago`;
+    } else if (hoursDiff > 0) {
+        parsedDiff = `${hoursDiff} Hour${hoursDiff > 1 ? 's' : ''} Ago`;
+    } else if (minutesDiff > 0) {
+        parsedDiff = `${minutesDiff} Minute${minutesDiff > 1 ? ' ' : ''} Ago`;
     } else {
-        parsedAgo = minutesAgo + " Minutes Ago"; 
+        parsedDiff = "Just Now";
     }
 
-    const playing = isNowPlaying ? "~Now Playing!~" : `Played ${parsedAgo || "unknown time"}`;
+    const playing = isNowPlaying ? "~Now Playing!~" : `Played ${parsedDiff || "unknown time"}`;
+    
     return `
     <div class="track">
         <center><img src="${track.image[3]["#text"]}" alt="${track.name}"</center>
