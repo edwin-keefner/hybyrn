@@ -207,4 +207,8 @@ body.dark .fancygif {
     position: absolute;
     z-index: 0;
     opacity: 50%;
+    display: none;
+}
+body.dark #earth {
+    display: block;
 }
