@@ -27,6 +27,7 @@ async function updateSongs() {
     } else {
         parsedAgo = minutesAgo + " Minutes Ago";
     }
+    console.log(hoursAgo); 
     const playing = isNowPlaying ? "~Now Playing!~" : `Played ${parsedAgo || "unknown time"}`;
     return `
     <div class="track">
