@@ -19,7 +19,7 @@ async function updateSongs() {
     const daysAgo = Math.floor(millisecondsAgo / 86400000);
     const hoursAgo = Math.floor((millisecondsAgo % 86400000) / 3600000);
     const minutesAgo = Math.round(((millisecondsAgo % 86400000) % 3600000) / 60000);
-    const parsedAgo = null; 
+    var parsedAgo = null; 
     if (daysAgo != 0) {
         parsedAgo = daysAgo + " Days Ago";
     } else if (hoursAgo != 0) {
