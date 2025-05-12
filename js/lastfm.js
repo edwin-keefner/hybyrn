@@ -14,8 +14,8 @@ async function updateSongs() {
     container.innerHTML = tracks.map(track => {
     const isNowPlaying = track["@attr"]?.nowplaying === "true";
     const songTime = new Date(track.date?.["#text"]);
-    const currentTime = new Date();
-    const millisecondsAgo = (currentTime- songTime); 
+    const currentTime = new Date(new Date().toLocaleTimeString('en-US', {timeZone: 'utc'}));
+    const millisecondsAgo = (currentTime - songTime); 
     const daysAgo = Math.floor(millisecondsAgo / 86400000);
     const hoursAgo = Math.floor((millisecondsAgo % 86400000) / 3600000);
     const minutesAgo = Math.round(((millisecondsAgo % 86400000) % 3600000) / 60000);
