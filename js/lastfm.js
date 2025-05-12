@@ -20,9 +20,9 @@ async function updateSongs() {
     const hoursAgo = Math.floor((millisecondsAgo % 86400000) / 3600000);
     const minutesAgo = Math.round(((millisecondsAgo % 86400000) % 3600000) / 60000);
     var parsedAgo = null; 
-    if (daysAgo != 0) {
+    if (daysAgo != 0 || daysAgo != NaN) {
         parsedAgo = daysAgo + " Days Ago";
-    } else if (hoursAgo != 0) {
+    } else if (hoursAgo != 0 || hoursAgo != NaN) {
         parsedAgo = hoursAgo + " Hours and " + (currentTime.getMinutes() - songTime.getMinutes()) + " Minutes Ago";
     } else {
         parsedAgo = minutesAgo + " Minutes Ago";
