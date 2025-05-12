@@ -20,6 +20,9 @@ async function updateSongs() {
     const currentUTC = Date.UTC(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate());
     const songUTC = Date.UTC(songTime.getFullYear(), songTime.getMonth(), songTime.getDate());
     
+    console.log(currentUTC);
+    console.log(songUTC);
+    console.log(currentUTC - songUTC);
     var daysAgo = Math.floor((currentUTC - songUTC) / 86400000);
     var hoursAgo = Math.floor((currentUTC - songUTC) / 3600000);
     var minutesAgo = Math.floor((currentUTC - songUTC) / 60000); 
