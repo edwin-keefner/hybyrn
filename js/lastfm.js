@@ -40,7 +40,7 @@ async function updateSongs() {
     } else if (hoursDiff > 0) {
         parsedDiff = `${hoursDiff} Hour${hoursDiff > 1 ? 's' : ''} Ago`;
     } else if (minutesDiff > 0) {
-        parsedDiff = `${minutesDiff} Minute${minutesDiff > 1 ? ' ' : ''} Ago`;
+        parsedDiff = `${minutesDiff} Minute${minutesDiff > 1 ? 's' : ''} Ago`;
     } else {
         parsedDiff = "Just Now";
     }
