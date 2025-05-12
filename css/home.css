@@ -80,6 +80,10 @@ body.dark .cell{
     border-color: white;
 }
 
+.cell p, h4, hr {
+    z-index: 2;
+}
+
 .bulletin{
     width: 100%;
     padding-top: 10px;
@@ -197,4 +201,10 @@ body.dark .fancygif {
 }
 .track a {
     font-size: 0.75rem;
+}
+
+#earth {
+    position: absolute;
+    z-index: 0;
+    opacity: 50%;
 }
