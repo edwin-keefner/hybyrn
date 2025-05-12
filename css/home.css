@@ -192,3 +192,9 @@ body.dark .fancygif {
     width: 50px;
     height: auto;
 }
+.track p {
+    font-size: 0.75rem;
+}
+.track a {
+    font-size: 0.75rem;
+}
