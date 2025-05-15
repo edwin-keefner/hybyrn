@@ -1,0 +1,59 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    background-image: url();
+    background-size: repeat; 
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 100vmin;
+    height: 100vmin;
+    background-image: url(/images/lander_computer.jpg);
+    background-size: cover;
+}
+
+.computer {
+    position: relative;
+    display: flex; 
+    height: 12.1vmin;
+    width: 16.5vmin;
+    rotate: -2deg;
+    left: 61.8vmin;
+    top: 42.22vmin;
+    justify-content: center;
+    align-items: center;
+}
+.computer p {
+    font-size: 2.5vmin;
+    display: none;
+    color: greenyellow;
+    animation: blinker 1.5s linear infinite;
+}
+.computer:hover {
+    box-shadow: 2px 2px 52px 5px rgba(201, 227, 255, 1), 2px 2px 20px 15px rgba(201, 227, 255, 0.25) inset;
+}
+.computer:hover p {
+    display: block;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.25;
+    }
+}
+
+.welcome {
+    position: relative;
+    display: flex;
+    height: 50vmin;
+    left: 0vmin;
+    top: -20vmin;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'terminal_f4regular';
+    src: url('/fonts/terminal_f4-webfont.woff2') format('woff2'),
+         url('/fonts/terminal_f4-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'courier_prime_coderegular';
+    src: url('/fonts/courier_prime_code-webfont.woff2') format('woff2'),
+         url('/fonts/courier_prime_code-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+    font-family: 'courier_prime_coderegular';
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+a {
+    
+}
+a:link{
+    color: pink;
+}
+a:visited{
+    color: pink;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.blinkie {
+    width: 150px;
+    height: 20px;
+}
+
+.buttons {
+
+}

@@ -2,130 +2,21 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"> 
-        <link href="/css/index.css" rel="stylesheet" type="text/css"> 
-        <link href="/css/home.css" rel="stylesheet" type="text/css"> 
-        <script type="importmap">
-            {
-              "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three@v0.176.0/build/three.module.js",
-                "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.176.0/examples/jsm/"
-              }
-            }
-            </script>
-        <title>hi!</title>
+        <link href="/css/index2.css" rel="stylesheet" type="text/css">
+        <link href="/css/lander.css" rel="stylesheet" type="text/css">
+        <title>Welcome</title>
     </head>
     <body>
         <div class="main">
-            <div class="title">
-                <a href="/index.html"><img id = "home_image"></a>
-                <h1>hybyrn</h1>
-                <button id='darkmode'>Dark Mode?</button>
+            <div class="image">
+                <a href="home.html">
+                    <div class="computer clickable">
+                        <p>ENTER ↵</p>
+                    </div>
+                </a>
+                <img class="welcome" src="/images/animated_welcome.gif">
             </div>
-            <div class="page">
-                <img src='https://web.archive.org/web/20091026214846/http://geocities.com/lenathuy/pinkmorph.gif' class="fancygif" id="gif1">
-                <div class="grid_container">
-                <div class="grid">
-                    <div class="cell">
-                        <img src="/images/earthspinning.gif" id="earth">
-                        <h4>Check out my blog <a href="/blog.html">here!</a></h4>
-                        <hr>
-                        <h4>Check out my music blog & some of my music <a href="/music.html">here!</a></h4>
-                        
-                    </div>
-
-                    <div class="cell">
-                        <h4>ABOUT ME</h4>
-                        <div class="endeavors">
-                            <ul style="text-align: left;">
-                                <li>Name: Evelyn (hybyrn)</li>
-                                <li>Pronouns: She / They</li>
-                                <li id="age">Age: 17</li>
-                                <li id="timeLeft">Time left: 60</li>
-                                <li>Occupation: Broke</li>
-                                <li>Soon to be broke CS student (yay college)</li>
-                                <li>Avid Enjoyer</li>
-                                <li>Amateur Yearner</li>
-                                <li>It insists upon itself</li>
-                                <div class="blinkies">
-                                    blinkies:
-                                    <a href="https://www.tumblr.com/glittergroovy/182648467585/trans-blinkies-please?source=share" target="_blank"><img src="/images/transgender_blinkie.gif"></a>
-                                    <a href="https://graphics-cafe.tumblr.com/" target="_blank"><img src="/images/music_blinkie.gif"></a>
-                                    <a href="https://graphics-cafe.tumblr.com/" target="_blank"><img src="/images/transgender_blinkie_2.gif"></a>
-                                    <a href="https://graphics-cafe.tumblr.com/post/701210474624286720" target="_blank"><img src="/images/rei_blinkie.gif"></a>
-                                    <a href="https://64.media.tumblr.com/94d52ad7622b2a092815210c0e19c337/37912695441669a8-be/s1280x1920/740ad11686e0804a584c3a142edba18d913a65ff.gif" target="_blank"><img src="/images/placebo_blinkie.gif" alt="blue blinkie that reads the word placebo in all caps"></a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="cell">
-                        <div id="tracks">
-                            <h1>Recently Listened:</h1>
-                            <hr>
-                        </div>
-                    </div>
-
-                    <div class="cell">
-                        <h4>Time:</h4>
-                        <p id="userTime">hi</p>
-                        <hr>
-                        <h4>Current time for me:</h4>
-                        <p id='time'>hi</p>
-                    </div>
-
-                    <div class="cell">
-                        <img src="/images/underscores-cops-and-robbers.gif" style="width: 40%;" alt="gif of underscores dancing">
-                        <p><br>i love u underscores</p>
-                    </div>
-                    <div class="cell">
-                        <h4>My Recent Endeavors</h4>
-                        <div class="endeavors">
-                            <ul style="text-align: left;">
-                                <li>studying for too many AP exams</li>
-                                <li>see above</li>
-                                <li>working on this website because it's better than studying</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="cell">
-                        <h4>Socials</h4>
-                        <a href="https://twitter.com/hybyrn" target="_blank">Twitter</a>
-                        <a href="https://discord.com/users/653278324197687306" target="_blank">Discord</a>
-                        <a href="https://open.spotify.com/user/bmu8ikwxzsoxmufin2skrqvf3?si=c137bc6c5a6046a4" target="_blank">Personal Spotify</a>
-                        <hr>
-                        <h3>WEBRING</h3>
-                        <a href="https://hybyrn.vercel.app/" target="blank"><img src="/images/button.png" style="width: 88px; height: 31px;"></a>
-                    </div>
-
-                    <div class="cell">
-                        <h4>Post Anything</h4>
-                        <p style="opacity: 50%;">WIP FORUM</p>
-                        <h4>Website is UNDER CONSTRUCTION!</h4>
-                        <img src="https://web.archive.org/web/20091027071000/http://geocities.com/jpdetroitusa/CONSTRUCTION_ANIMEE.gif">
-                    </div>
-
-                    <div class="cell" id="canvas">
-                        <canvas id="worldgeneration"></canvas>
-                    </div>
-                </div>
-                <img src='https://web.archive.org/web/20091026214846/http://geocities.com/lenathuy/pinkmorph.gif' class="fancygif" id="gif2">
-                <!--<footer></footer>--> <!--FOOTER HERE IN CASE NEEDED, JS IS SETUP, CSS IS SETUP-->
-                </div>
-                <div class="sidebar">
-                    <center><div><h1 class="sidebarh1">Stream of Consciousness</h1></div></center>
-                    <!--UPDATE BULLETIN IN HOME.JS-->
-                </div>
-                <button id="sidebar_button">☰</button>
-                <a href="https://web.archive.org/web/20090829024959/http://geocities.com/orca7585/nge/rei/rei.html" target="_blank"><img src="/images/rei_sit.gif" id="interest" style="width: auto; height: 9vh; top: 2vh; left: 15vw; transform: rotate(5deg); min-height: 69px"></a>
-                <a href="https://jansgraphics.com/Blinkies/Fish/pg.html" target="_blank"><img src="/images/fish_blinkie.gif" id="interest" style="width: auto; height: 4vh; top: 5vh; left: 17.5vw; min-height: 30px;"></a> 
-                <!--<img src="https://media1.tenor.com/m/3SdWaXomogYAAAAd/madoka-magica-puella-magi-madoka-magica.gif" id="interest" style="width: 200px; height: auto; bottom: 50px; left: 100px; transform: rotate(15deg);">-->
-            </div>
+            
         </div>
-        <script src="/js/index.js" defer></script>
-        <script src="/js/home.js" defer></script>
-        <script src="/js/clock.js" defer></script>
-        <script src="/js/lastfm.js" defer></script>
-        <script src="/js/worldgeneration.js" type="module" defer></script>
     </body>
 </html>
