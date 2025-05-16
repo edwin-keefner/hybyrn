@@ -59,6 +59,17 @@ canvas.addEventListener( 'mouseup', () => {
 });
 
 
+//change canvas width on resize it's broken only a little bit
+canvas.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+
+    camera.aspect = canvas.clientWidth / canvas.clientHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(canvas.clientWidth , canvas.clientHeight);
+
+}
 
 
 
