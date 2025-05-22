@@ -51,6 +51,12 @@ main {
 
 
 
+.content_container {
+    margin-bottom: 10px;
+}
+
+
+
 
 
 .left {
@@ -59,14 +65,8 @@ main {
     align-items: center;
     margin-top: 25px;
 }
-.left div {
-    margin-bottom: 10px;
-}
 
 .song_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border: 0.1px solid black;
     border-radius: 15px;
     width: 80%;
@@ -95,18 +95,6 @@ main {
     font-size: 0.75rem;
 }
 
-.blinkie_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 0.1px solid black;
-    border-radius: 15px;
-    width: 80%;
-    height: 100px;
-    overflow-y: scroll;
-    padding-bottom: 10px;
-}
-
 .world {
     display: flex;
     align-items: center;
@@ -122,6 +110,36 @@ main {
     height: 90%;
 }
 
+.blinkie_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1px solid black;
+    border-radius: 15px;
+    width: 80%;
+    max-height: 100px;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+}
+
+.webring_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1px solid black;
+    border-radius: 15px;
+    width: 80%;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+    height: fit-content;
+    margin: 0;
+}
+
+.webring {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
@@ -132,8 +150,16 @@ main {
     align-items: center;
     margin-top: 25px;
 }
-.left div {
-    margin-bottom: 10px;
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-height: 200px;
+    border: 0.25px solid black;
+    border-radius: 15px;
+    word-break: break-word;
 }
 
 .soc {
@@ -164,6 +190,7 @@ main {
     padding-right: 10px;
     border-collapse: collapse;
     border-bottom: 0.25px solid black;
+    margin: 0;
 }
 .bulletin img {
     width: 100%;
