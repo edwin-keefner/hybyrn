@@ -7,6 +7,7 @@ const bar2 = document.getElementById('gif2');
 
 //entries from newest to oldest
 const socentries = [
+    "6/6/25 2:54pm: oops sorry i was doing something",
     "5/22/25 12:29am: ill have 1 woke hold the based",
     "5/11/25 3:36am: happy mother's day",
     "5/10/25 11:38pm: a miniature version of rei ayanami is literally sitting on the border of my title this is literally the coolest thing ever",
