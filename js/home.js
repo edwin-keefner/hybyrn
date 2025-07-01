@@ -7,6 +7,7 @@ const bar2 = document.getElementById('gif2');
 
 //entries from newest to oldest
 const socentries = [
+    "7/1/25 1:18am: i dont want 2 be cigarettes",
     "6/27/25 11:09pm: life is too short to be getting mad at red lights. it's like kind of chill to just sit there",
     "6/6/25 2:54pm: oops sorry i was doing something",
     "5/22/25 12:29am: ill have 1 woke hold the based",
