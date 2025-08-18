@@ -25,7 +25,7 @@ main {
     height: fit-content;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 650px) {
     main {
         flex-direction: column;
     }
@@ -43,7 +43,7 @@ main {
     }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 650px) {
     .center {
         width: 60%;
     }
@@ -89,8 +89,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 200px;
     word-break: break-word;
+}
+
+.profile img {
+    height: 50%;
+    width: auto;
+    padding: 10px;
 }
 
 .soc {
