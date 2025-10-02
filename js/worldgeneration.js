@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const canvas = document.getElementById('worldgeneration');
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('white');
+scene.background = new THREE.Color('black');
 
 //create renderer
 const renderer = new THREE.WebGLRenderer({
@@ -28,7 +28,7 @@ const mat = new THREE.MeshBasicMaterial({
     wireframe: true
 });
 const mesh = new THREE.Mesh(geo, mat);
-mesh.material.color = new THREE.Color('black');
+mesh.material.color = new THREE.Color('white');
 
 scene.add(mesh);
 
