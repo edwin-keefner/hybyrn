@@ -1,19 +1,48 @@
+body {
+}
+
+/*Big Screen*/
+@media (min-width: 650px) {
+  .content {
+    width: 50vw;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Small Screen*/
+@media (max-width: 650px) {
+  .content {
+    width: 100vw;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.main {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
 .content {
     display: flex;
     flex-direction: column;
-    border: 1px solid #26095a;
+    border: 1px solid;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    color: black;
-    background: #ffbce9;
-    width: 50vw;
     height: auto;
-}
-body.dark .content {
     border-color: white;
     color: white;
     background: none;
-    background-color: transparent;
+    background-color: black;
+    border-radius: 15px;
 }
 
 .content * {
@@ -23,4 +52,5 @@ body.dark .content {
 .content p {
     padding-left: 1.05em;
     padding-right: 1.05em;
+    text-indent: 12.5px;
 }

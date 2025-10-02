@@ -1,4 +1,9 @@
-const soc = document.querySelector('.soc');
+const sidebar = document.querySelector('.sidebar');
+const grid_container = document.querySelector('.grid_container');
+const sidebar_button = document.getElementById('sidebar_button');
+//const footer = document.querySelector('footer');
+const bar1 = document.getElementById('gif1');
+const bar2 = document.getElementById('gif2');
 
 //entries from newest to oldest
 const socentries = [
@@ -29,14 +34,33 @@ const socentries = [
     "4/18/25 2:24am: i wanted three entries",
     "4/18/25 2:20am: i wanted two entries",
     "4/18/25 2:20am: panoply is a good word"
-]  
+]
 
-
-//adds bulletin entries to soc div
+//adds bulletin entries to sidebar
 for (let i = 0; i < socentries.length; i++) {
     const entry = document.createElement("div");
     entry.setAttribute("class", "bulletin");
-    entry.innerHTML = "<p>" + socentries[i] + "</p>";
-    soc.appendChild(entry);
+    entry.innerHTML = socentries[i];
+    sidebar.appendChild(entry);
 }
 
+//hide sidebar button code
+let sidebar_toggle = true;
+sidebar_button.addEventListener('click', () => {
+    if(sidebar_toggle) {
+        sidebar.style.width = '0';
+        grid_container.style.width = '100%';
+        //footer.style.width = '100%';
+        sidebar_button.style.right = '10px';
+        bar1.style.width = '100vw';
+        bar2.style.width = '100vw';
+    } else {
+        sidebar.style.width = '20%';
+        grid_container.style.width = '80%';
+        //footer.style.width = '80%';
+        sidebar_button.style.right = 'calc(20% + 10px)';
+        bar1.style.width = '80vw';
+        bar2.style.width = '80vw';
+    }
+    sidebar_toggle = !sidebar_toggle;
+});

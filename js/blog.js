@@ -1,7 +1,9 @@
 const entry_list = document.getElementById("entries");
+const homepage_list = document.getElementById("blog-head");
 
 const blogentries = [
     //"/blogentries/MM-DD-YYYY.html"
+    "/blogentries/10-01-2025-blossomsai.html",
     "/blogentries/07-01-2025-aithoughts.html",
     "/blogentries/06-06-2025-update.html",
     "/blogentries/05-11-2025-ywottrans.html",
@@ -10,6 +12,7 @@ const blogentries = [
 
 const blognames = [
     //"test blog"
+    "10/1/2025: my 2 month experience as a computer science student. I hate blossoms ai",
     "7/1/2025: thoughts on ai",
     "6/6/2025: update!",
     "5/11/2025: The perks of being an internet janitor",
@@ -21,7 +24,12 @@ if (blogentries.length === 0) {
     entry.innerHTML = "nothing here...";
     entry.style.fontSize = "2rem";
     entry.style.opacity = "0.5";
-    entry_list.appendChild(entry);
+    try {
+        entry_list.appendChild(entry);
+    } catch {}
+    try {
+        homepage_list.appendChild(entry);
+    } catch {}
 }
 
 for (let i = 0; i < blogentries.length; i++) {
@@ -29,5 +37,24 @@ for (let i = 0; i < blogentries.length; i++) {
     entry.setAttribute("class", "entry");
     entry.setAttribute("href", blogentries[i]);
     entry.innerHTML = blognames[i];
-    entry_list.appendChild(entry);
+    if (i < 5 && (blogentries[i] != null)) {
+        try {
+            homepage_list.append(entry);
+        } catch {}
+    }
+    
+    if (i == 5) {
+        try {
+            const seemore = document.createElement("a");
+            seemore.setAttribute("href", "/blog.html");
+            seemore.innerHTML = "See More";
+            homepage_list.append(seemore);
+        } catch {}
+    }
+    
+    try {
+       entry_list.appendChild(entry);
+    } catch {}
 }
+
+
