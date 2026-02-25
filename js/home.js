@@ -2,6 +2,7 @@ const soc = document.querySelector('.soc');
 
 //entries from newest to oldest
 const socentries = [
+    "2/16/25 10:59am: hi!",
     "9/27/25 4:52pm: we just got killed #geese #cameronwinter",
     "7/1/25 6:13pm: god im so hungry",
     "7/1/25 1:18am: i dont want 2 be cigarettes",

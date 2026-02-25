@@ -3,6 +3,7 @@ const homepage_list = document.getElementById("blog-head");
 
 const blogentries = [
     //"/blogentries/MM-DD-YYYY.html"
+    "/blogentries/02-16-2026-deliberate.html",
     "/blogentries/10-01-2025-blossomsai.html",
     "/blogentries/07-01-2025-aithoughts.html",
     "/blogentries/06-06-2025-update.html",
@@ -12,7 +13,8 @@ const blogentries = [
 
 const blognames = [
     //"test blog"
-    "10/1/2025: my 2 month experience as a computer science student. I hate blossoms ai",
+    "2/16/2026: Deliberate",
+    "10/1/2025: I hate blossoms ai",
     "7/1/2025: thoughts on ai",
     "6/6/2025: update!",
     "5/11/2025: The perks of being an internet janitor",
