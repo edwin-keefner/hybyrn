@@ -50,11 +50,4 @@ for (let i = 0; i < musicblogentries.length; i++) {
     } catch {}
 }
 
-show_info.forEach((button) => {
-    button.addEventListener("click", () => {
-        const info = button.parentNode.querySelector(".artistinfo");
-        if (info) {
-            info.style.display = (info.style.display === "block") ? "none" : "block";
-        }
-    });
-}); 
+
