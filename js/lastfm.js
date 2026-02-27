@@ -1,10 +1,11 @@
 async function updateSongs() {
     try {
-      const response = await fetch("/api/lastfm?user=hybyrn&limit=100");
-      const data = await response.json();
-      displayTracks(data.recenttracks.track);
+        const response = await fetch("https://hybyrn.net/api/lastfm?user=hybyrn&limit=100");
+        //const response = await fetch("/api/lastfm?user=hybyrn&limit=100");
+        const data = await response.json();
+        displayTracks(data.recenttracks.track);
     } catch (error) {
-      console.error("Failed to fetch tracks:", error);
+        console.error("Failed to fetch tracks:", error);
     }
   }
 
