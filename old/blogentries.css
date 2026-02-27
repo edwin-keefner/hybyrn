@@ -39,9 +39,9 @@ body {
     margin-bottom: 2vh;
     height: auto;
     border-color: white;
-    color: white;
+    color: black;
     background: none;
-    background-color: black;
+    background-color: white;
     border-radius: 15px;
 }
 

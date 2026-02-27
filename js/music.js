@@ -1,53 +1,34 @@
-const music_list = document.getElementById("musicblogentries");
-const homepage_music_list = document.getElementById("music-head");
-const show_info = document.querySelectorAll(".showmore");
+const blogList = document.getElementById("blog_list");
 
-const musicblogentries = [
-    //"/musicblogentries/MM-DD-YYYY.html"
-    "musicblogentries/05-03-2025-jojomayer.html"
-]
+fetchBlogData();
 
-const musicblognames = [
-    //"music test blog"
-    "5/2/2025: Jojo Mayer"
-]
-
-if (musicblogentries.length === 0) {
-    const entry = document.createElement("p");
-    entry.innerHTML = "nothing here...";
-    entry.style.fontSize = "2rem";
-    entry.style.opacity = "0.5";
+async function fetchBlogData() {
     try {
-        music_list.appendChild(entry);
-    } catch {}
-    try {
-        homepage_music_list.appendChild(entry);
-    } catch {}
+        const blogEntries = await fetchJson('./js/json/musicblogentries.json');
+        const blogNames = await fetchJson('./js/json/musicblognames.json');
+        addBlogEntries(blogEntries, blogNames);
+    } catch (error) {
+        console.error("Error fetching blog data:", error);
+    }
 }
 
-for (let i = 0; i < musicblogentries.length; i++) {
-    const entry = document.createElement("a");
-    entry.setAttribute("class", "entry");
-    entry.setAttribute("href", musicblogentries[i]);
-    entry.innerHTML = musicblognames[i];
-    if (i < 1 && (musicblogentries[i] != null)) {
-        try {
-            homepage_music_list.append(entry);
-        } catch {}
-    }
-    
-    if (i == 1) {
-        try {
-            const seemore = document.createElement("a");
-            seemore.setAttribute("href", "/music.html");
-            seemore.innerHTML = "See More";
-            homepage_music_list.append(seemore);
-        } catch {}
-    }
-    
-    try {
-       music_list.appendChild(entry);
-    } catch {}
+async function fetchJson(url) {
+    const response = await fetch(url);
+    return await response.json();
 }
 
-
+function addBlogEntries(blogEntries, blogNames) {
+    if (blogEntries.length === 0) {
+        const message = document.createElement("p");
+        message.innerHTML = "nothing here..";
+        blogList.append(message);
+    } else {
+        for (let i = 0; i < blogEntries.length; i++) {
+            const entry = document.createElement("a");
+            entry.setAttribute("class", "blog_entry");
+            entry.setAttribute("href", blogEntries[i]);
+            entry.innerHTML = blogNames[i];
+            blogList.append(entry);
+        }
+    }
+}

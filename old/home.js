@@ -1,5 +1,4 @@
-const recentBlog = document.getElementById("recent_blog");
-const soc = document.getElementById('soc');
+const soc = document.querySelector('.soc');
 
 //entries from newest to oldest
 const socentries = [
@@ -33,6 +32,7 @@ const socentries = [
     "4/18/25 2:20am: panoply is a good word"
 ]  
 
+
 //adds bulletin entries to soc div
 for (let i = 0; i < socentries.length; i++) {
     const entry = document.createElement("div");
@@ -40,35 +40,4 @@ for (let i = 0; i < socentries.length; i++) {
     entry.innerHTML = "<p>" + socentries[i] + "</p>";
     soc.appendChild(entry);
 }
-
-fetchBlogData();
-
-async function fetchBlogData() {
-    try {
-        const blogEntries = await fetchJson('./js/json/blogentries.json');
-        const blogNames = await fetchJson('./js/json/blognames.json');
-        addRecentBlog(blogEntries, blogNames);
-    } catch (error) {
-        console.error("Error fetching blog data:", error);
-    }
-}
-
-async function fetchJson(url) {
-    const response = await fetch(url);
-    return await response.json();
-}
-
-function addRecentBlog(blogEntries, blogNames) {
-    if (blogEntries.length === 0) {
-        recentBlog.innerHTML = "<i>Recent Blog:</i> No Blogs Found"
-    } else {
-        const blogLink = document.createElement("a");
-        recentBlog.innerHTML = "<i>Recent Blog: </i>";
-        blogLink.setAttribute("href", blogEntries[0]);
-        blogLink.innerHTML = blogNames[0];
-        recentBlog.append(blogLink);
-    }
-}
-
-
 

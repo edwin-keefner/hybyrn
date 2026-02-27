@@ -4,8 +4,8 @@ fetchBlogData();
 
 async function fetchBlogData() {
     try {
-        const blogEntries = await fetchJson('./js/json/blogentries.json');
-        const blogNames = await fetchJson('./js/json/blognames.json');
+        const blogEntries = await fetchJson('./js/json/bookblogentries.json');
+        const blogNames = await fetchJson('./js/json/bookblognames.json');
         addBlogEntries(blogEntries, blogNames);
     } catch (error) {
         console.error("Error fetching blog data:", error);
