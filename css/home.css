@@ -220,3 +220,47 @@
     overflow-wrap: break-word;
     flex-wrap: wrap;
 }
+
+#todo_window_header_parent {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#todo_window_header {
+    width: 100%; 
+    background-color: white;
+    color: rgba(104,131,139, 1);
+}
+
+.todo_window_header_style {
+    border-bottom: 1px solid black;
+    text-align: right;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+}
+
+#todo_window_header_parent li {
+    list-style-type: none;
+}
+
+#todo_window_content {
+    padding: 5px;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 1100px) {
+    #todo_window_header_parent {
+        
+    }
+}
+
+@media (max-width: 1100px) {
+    #todo_window_header_parent {
+        display: none;
+    }
+}

@@ -3,6 +3,8 @@ const soc = document.getElementById('soc');
 
 //entries from newest to oldest
 const socentries = [
+    "2/28/26 1:01am: im feeling very overwhelmed. comparison is the thief of joy? probably . or i just need to actually put my mind to something",
+    "2/28/26 12:14am: oh my god im so tired antiprofit leftist bookstore save me",
     "2/16/25 10:59am: hi!",
     "9/27/25 4:52pm: we just got killed #geese #cameronwinter",
     "7/1/25 6:13pm: god im so hungry",
