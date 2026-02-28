@@ -57,7 +57,7 @@ class Draggable {
 
     link = (e) => {
         this.draggable = 0;
-        if (this.oldX === e.clientX && this.oldY === e.clientY) {
+        if (Math.abs(this.oldX - e.clientX) <= 50 && Math.abs(this.oldY - e.clientY) <= 50) { // 50 is a buffer so clicks on links are responsive . probably will break a draggable window that's also a link but i dont have those yet or plan on having those
             if (e.target.parentElement && typeof e.target.parentElement.href !== "undefined") {
                 if (e.target.parentElement.target !== '_blank') {
                     window.open(e.target.parentElement.href, '_self');
