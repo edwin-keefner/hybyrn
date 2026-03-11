@@ -3,6 +3,7 @@ const soc = document.getElementById('soc');
 
 //entries from newest to oldest
 const socentries = [
+    "3/11/26 6:06pm: i eat wires",
     "3/4/26 5:44pm: i was having an alright day and now im having a terrible day. that is my current thought i am having",
     "3/1/26 8:03pm: i might be the weakest link but in a different kind of way that im generally ok with",
     "3/1/26 8:02pm: not you . or me. they aren't seeing this. dont worry",
@@ -12,7 +13,7 @@ const socentries = [
     "3/1/26 7:58pm: my camera i bought off of ebay in an impulse purchase comes in the mail tomorrow im so excited",
     "2/28/26 1:01am: im feeling very overwhelmed. comparison is the thief of joy? probably . or i just need to actually put my mind to something",
     "2/28/26 12:14am: oh my god im so tired antiprofit leftist bookstore save me",
-    "2/16/25 10:59am: hi!",
+    "2/16/26 10:59am: hi!",
     "9/27/25 4:52pm: we just got killed #geese #cameronwinter",
     "7/1/25 6:13pm: god im so hungry",
     "7/1/25 1:18am: i dont want 2 be cigarettes",

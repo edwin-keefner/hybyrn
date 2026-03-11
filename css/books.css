@@ -1,0 +1,29 @@
+#blog_header {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#reading_list {
+    padding: 5px;
+}
+
+.book {
+    padding: 5px;
+}
+
+.book #title {
+
+}
+
+.book #info {
+    display: none;
+}
+
+.book:hover {
+    background-color: rgba(104,131,139, 0.1);
+}
+
+.book:hover #info {
+    display: block;
+    
+}
