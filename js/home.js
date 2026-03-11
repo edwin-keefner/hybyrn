@@ -3,6 +3,7 @@ const soc = document.getElementById('soc');
 
 //entries from newest to oldest
 const socentries = [
+    "3/11/26 7:40pm: the front facing camera has done terrible things for our society",
     "3/11/26 6:06pm: i eat wires",
     "3/4/26 5:44pm: i was having an alright day and now im having a terrible day. that is my current thought i am having",
     "3/1/26 8:03pm: i might be the weakest link but in a different kind of way that im generally ok with",

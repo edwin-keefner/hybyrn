@@ -1,6 +1,7 @@
 const blogList = document.getElementById("blog_list");
 
 fetchBlogData();
+fetchBookListData();
 
 async function fetchBlogData() {
     try {
@@ -30,5 +31,43 @@ function addBlogEntries(blogEntries, blogNames) {
             entry.innerHTML = blogNames[i];
             blogList.append(entry);
         }
+    }
+}
+
+async function fetchBookListData() {
+    try {
+        const bookInfoList = await fetchJson('./js/json/bookinfo.json');
+        addBookInfo(bookInfoList);
+    } catch (error) {
+        console.error("Error fetching book data: ", error);
+    }
+}
+
+const addBookInfo = (bookInfoList) => {
+    const readingList = document.getElementById("reading_list");
+
+    for (let i = 0; i < bookInfoList.length; i++) {
+        const bookEntry = document.createElement("div");
+        const bookTitle = document.createElement("div");
+        const bookInfo = document.createElement("div");
+        const bookAuthor = document.createElement("p");
+        const bookRead = document.createElement("p");
+        const bookComment = document.createElement("p");
+
+        bookEntry.setAttribute("class", "book");
+        bookTitle.setAttribute("id", "title");
+        bookInfo.setAttribute("id", "info");
+        
+        bookTitle.innerHTML = bookInfoList[i]["title"];
+        bookAuthor.innerHTML = "Author: " + bookInfoList[i]["author"];
+        bookRead.innerHTML = "Read: " + bookInfoList[i]["read"];
+        bookComment.innerHTML = bookInfoList[i]["comments"];
+
+        bookInfo.append(bookAuthor); 
+        bookInfo.append(bookRead);
+        bookInfo.append(bookComment);
+        bookEntry.append(bookTitle);
+        bookEntry.append(bookInfo);
+        readingList.append(bookEntry);
     }
 }
