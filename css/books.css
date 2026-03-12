@@ -8,14 +8,10 @@
 }
 
 .book {
-    padding: 5px;
 }
 
-.book #title {
 
-}
-
-.book #info {
+.book .info {
     display: none;
 }
 
@@ -23,7 +19,12 @@
     background-color: rgba(104,131,139, 0.1);
 }
 
-.book:hover #info {
-    display: block;
-    
+.title {
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.info {
+    padding-left: 5px;
 }

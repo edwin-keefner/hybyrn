@@ -1,8 +1,5 @@
 const blogList = document.getElementById("blog_list");
 
-fetchBlogData();
-fetchBookListData();
-
 async function fetchBlogData() {
     try {
         const blogEntries = await fetchJson('./js/json/bookblogentries.json');
@@ -55,8 +52,8 @@ const addBookInfo = (bookInfoList) => {
         const bookComment = document.createElement("p");
 
         bookEntry.setAttribute("class", "book");
-        bookTitle.setAttribute("id", "title");
-        bookInfo.setAttribute("id", "info");
+        bookTitle.setAttribute("class", "title");
+        bookInfo.setAttribute("class", "info");
         
         bookTitle.innerHTML = bookInfoList[i]["title"];
         bookAuthor.innerHTML = "Author: " + bookInfoList[i]["author"];
@@ -71,3 +68,18 @@ const addBookInfo = (bookInfoList) => {
         readingList.append(bookEntry);
     }
 }
+
+const toggleBookInfo = () => {
+    const titles = document.querySelectorAll(".title");
+    for (let i = 0; i < titles.length; i++) {
+        titles[i].addEventListener('click', function handleClick(e) {
+            e.preventDefault();
+            const info = titles[i].parentNode.querySelector(".info");
+            info.style.display = (info.style.display === "block") ? "none" : "block";
+        });
+    }
+}
+
+fetchBlogData();
+fetchBookListData().then(() => toggleBookInfo());
+
