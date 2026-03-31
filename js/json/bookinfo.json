@@ -1,9 +1,21 @@
 [
     {
+        "title": "Letter From Japan",
+        "author": "Marie Kondo",
+        "read": "03/31/2026 - ",
+        "comments": "currently reading..."
+    },
+    {
+        "title": "The Bell Jar",
+        "author": "Sylvia Plath",
+        "read": "03/29/2026 - 03/30/2026",
+        "comments": "A poem is nothing like a piece of dust. scarily good literature I wished I had read earlier, but maybe I wouldn't have been fit to read it earlier."
+    },
+    {
         "title": "Algorithms",
         "author": "Panos Louridas",
-        "read": "03/23/2026 - ongoing",
-        "comments": "currently reading..."
+        "read": "03/23/2026 - 03/29/2026",
+        "comments": "i learned"
     },
     {
         "title": "Y2K: How the 2000s Became Everything (essays on the future that never was)",
