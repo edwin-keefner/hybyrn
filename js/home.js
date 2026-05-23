@@ -3,6 +3,7 @@ const soc = document.getElementById('soc');
 
 //entries from newest to oldest
 const socentries = [
+    "5/23/26 2:39pm: really stupid of me to use 5/23/26 and not 5/23/2026. there's only 100 years between now and my date system being confusing",
     "4/8/26 9:36pm: i'm at that point again",
     "3/15/26 1:54am: i know how im feeling and it isn't very good",
     "3/14/26 1:49am: i dont know how im feeling but im not feeling despondent",
@@ -27,11 +28,11 @@ const socentries = [
     "5/11/25 3:36am: happy mother's day",
     "5/10/25 11:38pm: a miniature version of rei ayanami is literally sitting on the border of my title this is literally the coolest thing ever",
     "5/10/25 4:45am: i need more gifs of pixel characters sitting they're so chill",
-    "5/10/2025 1:10am: the peak of the curve",
-    "5/7/2025 8:38pm: something about node.js made me feel like i was doing something very wrong so i saved my wellbeing and removed it",
-    "5/6/2025 2:04am: i really have no idea how anything to do with nodejs works now it feels like i have a bunch of bloat, but i hope i actually learn how to use it",
-    "5/6/2025 2:24am: so ready to bomb another test tomorrow",
-    "5/2/2025 11:05pm: jojo mayer is a beautiful man with beautiful words",
+    "5/10/25 1:10am: the peak of the curve",
+    "5/7/25 8:38pm: something about node.js made me feel like i was doing something very wrong so i saved my wellbeing and removed it",
+    "5/6/25 2:04am: i really have no idea how anything to do with nodejs works now it feels like i have a bunch of bloat, but i hope i actually learn how to use it",
+    "5/6/25 2:24am: so ready to bomb another test tomorrow",
+    "5/2/25 11:05pm: jojo mayer is a beautiful man with beautiful words",
     "5/1/25 2:21am: it's broke thursday",
     "5/1/25 1:49am: i like how the website is coming along this is so cool",
     "4/30/25 1:51am: bedtime",
