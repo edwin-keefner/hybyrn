@@ -3,6 +3,7 @@ const soc = document.getElementById('soc');
 
 //entries from newest to oldest
 const socentries = [
+    "9/21/26 4:55pm: <a href=\"https://brutalist-web.design/\" target=\"_blank\">brutalist web design</a>",
     "8/31/26 7:44pm: the purge is happening",
     "5/23/26 2:39pm: really stupid of me to use 5/23/26 and not 5/23/2026. there's only 100 years between now and my date system being confusing",
     "4/8/26 9:36pm: i'm at that point again",
